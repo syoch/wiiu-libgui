@@ -4,7 +4,7 @@
 
 #include <vector>
 #include "Widget.hpp"
-
+#include "Types.hpp"
 namespace GUI
 {
     extern const bool isRelative;

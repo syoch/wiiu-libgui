@@ -57,7 +57,7 @@ void GUI::Scroll::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
 {
     super.draw_triangle(convert(A), convert(B), convert(C));
 }
-void GUI::Scroll::draw_text(int row, int column, char *text, Color color)
+void GUI::Scroll::draw_text(int row, int column, mstd::wstring text, Color color)
 {
     super.draw_text(row, column, text, color);
 }
