@@ -1,6 +1,13 @@
 #pragma once
 #ifndef LIBGUI_SIZE
 #define LIBGUI_SIZE
+namespace mstd
+{
+    template <typename T>
+    class basic_string;
+
+    using wstring = basic_string<wchar_t>;
+} // namespace mstd
 
 namespace GUI
 {
