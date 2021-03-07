@@ -19,7 +19,7 @@ namespace GUI
 
         void _draw() override;
 
-        std::vector<std::reference_wrapper<Base>> childrens;
+        std::vector<Base *> *childrens;
     };
 }
 
