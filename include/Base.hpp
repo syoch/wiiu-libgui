@@ -20,8 +20,13 @@ namespace GUI
         virtual void draw_rect(DrawPoint start, DrawPoint end);
         virtual void draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D);
         virtual void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C);
+<<<<<<< HEAD
         virtual void draw_text(int row, int column, mstd::wstring, Color color);
         virtual void draw_textShadow(int row, int column, mstd::wstring, Color color);
+=======
+        virtual void draw_text(int row, int column, mstd::wstring, Color color);
+        virtual void draw_textShadow(int row, int column, mstd::wstring, Color color);
+>>>>>>> upstream/main
         virtual void draw_translate(float x, float y);
 
     public:
