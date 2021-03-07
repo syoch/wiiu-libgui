@@ -12,8 +12,10 @@ namespace GUI
     public:
         void draw_line(DrawPoint start, DrawPoint end) override;
         void draw_rect(DrawPoint start, DrawPoint end) override;
+        void draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D) override;
         void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C) override;
         void draw_text(int row, int column, mstd::wstring, Color color) override;
+        void draw_textShadow(int row, int column, mstd::wstring, Color color);
         void draw_translate(int x, int y) override;
         void _draw() override;
 

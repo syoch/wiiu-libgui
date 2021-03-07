@@ -19,6 +19,10 @@ namespace GUI
     {
         GUI::draw_rect(start, end);
     }
+    void Base::draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D)
+    {
+        GUI::draw_rect(A, B, C, D);
+    }
     void Base::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
     {
         GUI::draw_triangle(A, B, C);
@@ -26,6 +30,10 @@ namespace GUI
     void Base::draw_text(int row, int column, mstd::wstring text, Color color)
     {
         GUI::draw_text(row, column, text, color);
+    }
+    void Base::draw_textShadow(int row, int column, mstd::wstringtext, Color color)
+    {
+        GUI::draw_textShadow(row, column, text, color);
     }
     void Base::draw_translate(int x, int y)
     {

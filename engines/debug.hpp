@@ -34,10 +34,34 @@ namespace GUI
                    << "[" << end.color.r << ", " << end.color.b << ", " << end.color.g << ", " << end.color.a << "] "
                    << std::endl;
     }
+    void draw_rect(GUI::DrawPoint A, GUI::DrawPoint B, GUI::DrawPoint C, GUI::DrawPoint D)
+    {
+        std::wcout << "Draw rect: "
+                   << "(" << A.point.x << ", " << A.point.y << ")"
+                   << "[" << A.color.r << ", " << A.color.b << ", " << A.color.g << ", " << A.color.a << "] "
+                   << ", "
+                   << "(" << B.point.x << ", " << B.point.y << ")"
+                   << "[" << B.color.r << ", " << B.color.b << ", " << B.color.g << ", " << B.color.a << "] "
+                   << ", "
+                   << "(" << C.point.x << ", " << C.point.y << ")"
+                   << "[" << C.color.r << ", " << C.color.b << ", " << C.color.g << ", " << C.color.a << "] "
+                   << ", "
+                   << "(" << D.point.x << ", " << D.point.y << ")"
+                   << "[" << D.color.r << ", " << D.color.b << ", " << D.color.g << ", " << D.color.a << "] "
+                   << std::endl;
+    }
 
-    void draw_text(int row, int column, char *text, Color color)
+    void draw_text(int row, int column, mstd::wstringtext, Color color)
     {
         std::wcout << "Draw text: "
+                   << row << "," << column << " "
+                   << "[" << text << "] "
+                   << "[" << color.r << ", " << color.b << ", " << color.g << ", " << color.a << "] "
+                   << std::endl;
+    }
+    void draw_textShadow(int row, int column, mstd::wstringtext, Color color)
+    {
+        std::wcout << "Draw Stex: "
                    << row << "," << column << " "
                    << "[" << text << "] "
                    << "[" << color.r << ", " << color.b << ", " << color.g << ", " << color.a << "] "

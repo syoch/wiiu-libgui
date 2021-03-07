@@ -17,6 +17,10 @@ void GUI::WidgetBase::draw_rect(DrawPoint start, DrawPoint end)
 {
     super.draw_rect(start, end);
 }
+void GUI::WidgetBase::draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D)
+{
+    super.draw_rect(A, B, C, D);
+}
 void GUI::WidgetBase::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
 {
     super.draw_triangle(A, B, C);
@@ -24,6 +28,10 @@ void GUI::WidgetBase::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
 void GUI::WidgetBase::draw_text(int row, int column, mstd::wstring text, Color color)
 {
     super.draw_text(row, column, text, color);
+}
+void GUI::WidgetBase::draw_textShadow(int row, int column, mstd::wstringtext, Color color)
+{
+    super.draw_textShadow(row, column, text, color);
 }
 void GUI::WidgetBase::draw_translate(int x, int y)
 {

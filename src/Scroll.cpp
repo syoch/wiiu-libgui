@@ -55,6 +55,10 @@ void GUI::Scroll::draw_rect(DrawPoint start, DrawPoint end)
 {
     super.draw_rect(convert(start), convert(end));
 }
+void GUI::Scroll::draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D)
+{
+    super.draw_rect(convert(A), convert(B), convert(C), convert(D));
+}
 void GUI::Scroll::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
 {
     super.draw_triangle(convert(A), convert(B), convert(C));
@@ -62,6 +66,10 @@ void GUI::Scroll::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
 void GUI::Scroll::draw_text(int row, int column, mstd::wstring text, Color color)
 {
     super.draw_text(row, column, text, color);
+}
+void GUI::Scroll::draw_textShadow(int row, int column, mstd::wstringtext, Color color)
+{
+    super.draw_textShadow(row, column, text, color);
 }
 void GUI::Scroll::draw_translate(int x, int y)
 {
