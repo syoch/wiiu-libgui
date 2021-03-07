@@ -23,7 +23,7 @@ void GUI::Root::draw_text(int row, int column, mstd::wstring text, Color color)
 {
     GUI::draw_text(row, column, text, color);
 }
-void GUI::Root::draw_textShadow(int row, int column, mstd::wstringtext, Color color)
+void GUI::Root::draw_textShadow(int row, int column, mstd::wstring text, Color color)
 {
     GUI::draw_textShadow(row, column, text, color);
 }

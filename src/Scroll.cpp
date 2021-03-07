@@ -67,7 +67,7 @@ void GUI::Scroll::draw_text(int row, int column, mstd::wstring text, Color color
 {
     super.draw_text(row, column, text, color);
 }
-void GUI::Scroll::draw_textShadow(int row, int column, mstd::wstringtext, Color color)
+void GUI::Scroll::draw_textShadow(int row, int column, mstd::wstring text, Color color)
 {
     super.draw_textShadow(row, column, text, color);
 }

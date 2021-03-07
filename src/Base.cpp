@@ -31,7 +31,7 @@ namespace GUI
     {
         GUI::draw_text(row, column, text, color);
     }
-    void Base::draw_textShadow(int row, int column, mstd::wstringtext, Color color)
+    void Base::draw_textShadow(int row, int column, mstd::wstring text, Color color)
     {
         GUI::draw_textShadow(row, column, text, color);
     }
