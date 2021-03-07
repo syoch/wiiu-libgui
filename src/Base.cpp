@@ -6,6 +6,9 @@
 #include "Container.hpp"
 #include "DrawWrapper.hpp"
 #include <iostream>
+
+#include <mc/internal/std/string.hpp>
+
 namespace GUI
 {
     void Base::draw_line(DrawPoint start, DrawPoint end)
@@ -20,7 +23,7 @@ namespace GUI
     {
         GUI::draw_triangle(A, B, C);
     }
-    void Base::draw_text(int row, int column, char *text, Color color)
+    void Base::draw_text(int row, int column, mstd::wstring text, Color color)
     {
         GUI::draw_text(row, column, text, color);
     }

@@ -1,6 +1,8 @@
 #include <WidgetBase.hpp>
 #include <ContainerBase.hpp>
 
+#include <mc/internal/std/string.hpp>
+
 GUI::WidgetBase::WidgetBase(GUI::ContainerBase &_super, int x, int y, int w, int h)
     : Base(x, y, w, h), super(_super)
 {
@@ -19,7 +21,7 @@ void GUI::WidgetBase::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
 {
     super.draw_triangle(A, B, C);
 }
-void GUI::WidgetBase::draw_text(int row, int column, char *text, Color color)
+void GUI::WidgetBase::draw_text(int row, int column, mstd::wstring text, Color color)
 {
     super.draw_text(row, column, text, color);
 }

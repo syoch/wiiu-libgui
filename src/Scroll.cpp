@@ -2,6 +2,8 @@
 #include <WidgetBase.hpp>
 #include <DrawWrapper.hpp>
 
+#include <mc/internal/std/string.hpp>
+
 GUI::DrawPoint GUI::Scroll::convert(GUI::DrawPoint src)
 {
     if (!GUI::isRelative)

@@ -15,7 +15,7 @@ namespace GUI
         void draw_line(DrawPoint start, DrawPoint end);
         void draw_rect(DrawPoint start, DrawPoint end);
         void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C);
-        void draw_text(int row, int column, char *text, Color color);
+        void draw_text(int row, int column, mstd::wstring text, Color color);
         void draw_translate(int x, int y);
 
     public:

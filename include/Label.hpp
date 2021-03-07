@@ -20,13 +20,13 @@ namespace GUI
 
         void draw() override
         {
-            if (typeid(T) == typeid(std::string))
+            if (typeid(T) == typeid(mstd::wstring))
             {
-                draw_text(0, 0, (char *)text.c_str(), (GUI::Color){0, 0, 0, 0});
+                draw_text(0, 0, text, (GUI::Color){0, 0, 0, 0});
             }
             else
             {
-                draw_text(0, 0, (char *)"#NIMP#", (GUI::Color){0, 0, 0, 0});
+                draw_text(0, 0, mstd::wstring("#NIMP#"), (GUI::Color){0, 0, 0, 0});
             }
         };
 
