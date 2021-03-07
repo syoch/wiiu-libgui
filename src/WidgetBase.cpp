@@ -33,7 +33,7 @@ void GUI::WidgetBase::draw_textShadow(int row, int column, mstd::wstringtext, Co
 {
     super.draw_textShadow(row, column, text, color);
 }
-void GUI::WidgetBase::draw_translate(int x, int y)
+void GUI::WidgetBase::draw_translate(float x, float y)
 {
     super.draw_translate(x, y);
 }

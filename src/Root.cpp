@@ -27,7 +27,7 @@ void GUI::Root::draw_textShadow(int row, int column, mstd::wstringtext, Color co
 {
     GUI::draw_textShadow(row, column, text, color);
 }
-void GUI::Root::draw_translate(int x, int y)
+void GUI::Root::draw_translate(float x, float y)
 {
     GUI::_draw_translate(x, y);
 }
