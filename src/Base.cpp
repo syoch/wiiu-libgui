@@ -35,7 +35,7 @@ namespace GUI
     {
         GUI::draw_textShadow(row, column, text, color);
     }
-    void Base::draw_translate(int x, int y)
+    void Base::draw_translate(float x, float y)
     {
         GUI::_draw_translate(x, y);
     }
