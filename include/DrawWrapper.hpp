@@ -7,6 +7,7 @@
 
 namespace GUI
 {
+    extern Point base;
     extern const bool isRelative;
     void draw_begin();
     void draw_end();
