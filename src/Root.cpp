@@ -33,9 +33,7 @@ void GUI::Root::draw_translate(float x, float y)
 }
 void GUI::Root::_draw()
 {
-    GUI::draw_begin();
     ContainerBase::_draw();
-    GUI::draw_end();
 }
 GUI::Root::Root()
     : GUI::ContainerBase(0, 0, 0, 0)
