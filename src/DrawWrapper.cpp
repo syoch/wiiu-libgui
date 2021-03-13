@@ -7,13 +7,13 @@ void GUI::_draw_translate(float x, float y)
 
     GUI::draw_translate(x, y);
 }
-void GUI::draw_rect(DrawPoint start, DrawPoint end)
+void GUI::draw_rect(DrawPoint S, DrawPoint E)
 {
-    DrawPoint A = start;
-    DrawPoint B = start;
+    DrawPoint A = S;
+    DrawPoint B = S;
 
-    A.point.x = end.point.x;
-    B.point.y = end.point.x;
+    A.point.x = E.point.x;
+    B.point.y = E.point.x;
 
-    draw_rect(start, A, end, B);
+    draw_rect(S, A, E, B);
 }
