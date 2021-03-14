@@ -14,6 +14,7 @@ namespace GUI
     {
     protected:
         virtual void draw();
+        bool isHided;
 
     public:
         virtual void draw_line(DrawPoint start, DrawPoint end);
@@ -36,9 +37,6 @@ namespace GUI
 
         Point pos;
         Size size;
-
-    private:
-        bool isHided;
     };
 }
 
