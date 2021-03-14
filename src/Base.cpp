@@ -44,6 +44,8 @@ namespace GUI
     }
     void Base::_draw()
     {
+        if (isHided)
+            return;
         if (isRelative)
             draw_translate(pos.x, pos.y);
         draw();

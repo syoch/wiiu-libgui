@@ -9,6 +9,8 @@ GUI::ContainerBase::ContainerBase(int x, int y, int w, int h)
 }
 void GUI::ContainerBase::_draw()
 {
+    if (isHided)
+        return;
     if (isRelative)
         draw_translate(pos.x, pos.y);
     for (Base *elem : *childrens)
