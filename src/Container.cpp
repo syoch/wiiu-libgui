@@ -10,9 +10,9 @@ void GUI::Container::_draw()
 }
 void GUI::Container::hide()
 {
-    WidgetBase::hide();
+    ContainerBase::hide();
 }
 void GUI::Container::show()
 {
-    WidgetBase::show();
+    ContainerBase::show();
 }
