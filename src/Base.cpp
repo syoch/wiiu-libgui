@@ -71,5 +71,6 @@ namespace GUI
     {
         pos = ((Point){x, y});
         size = ((Size){w, h});
+        isHided = false;
     }
 }
